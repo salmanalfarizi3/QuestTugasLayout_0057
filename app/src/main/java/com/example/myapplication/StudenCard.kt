@@ -50,3 +50,13 @@ fun UserCard(
                 .fillMaxWidth()
                 .padding(horizontal = 8.dp, vertical = 6.dp)
         ){
+            Image(
+                painter = gambar,
+                contentDescription = null,
+                modifier = Modifier.size(50.dp)
+            )
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(horizontal = 8.dp)
+            ){
