@@ -60,3 +60,31 @@ fun UserCard(
                     .weight(1f)
                     .padding(horizontal = 8.dp)
             ){
+                Text(
+                    text = stringResource(nama),
+                    fontSize = 18.sp,
+                    fontFamily = fontFamily,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White
+                )
+                if (hp != null) {
+                    Text(
+                        text = stringResource(hp),
+                        fontSize = 13.sp,
+                        color = colorResource(id = hpColor)
+                    )
+                }
+                Text(
+                    text = stringResource(alamat),
+                    fontSize = 13.sp,
+                    color = colorResource(id = alamatColor)
+                )
+            }
+            Image(
+                painter = gambar,
+                contentDescription = null,
+                modifier = Modifier.size(50.dp)
+            )
+        }
+    }
+}
